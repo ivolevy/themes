@@ -1,0 +1,58 @@
+body{
+    background-color: rgb(152, 145, 145);
+}
+
+.button{
+    justify-content: center;
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+}
+
+.pushable {
+    display: block;
+    background-color: gray;
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;    
+  }
+.front {
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background-color: rgb(80, 80, 80);
+    color: white;
+    transform: translateY(-6px);
+  }
+
+.pushable:active .front {
+    transform: translateY(-2px);
+  }
+
+  .pushable2 {
+    display: none;
+    background-color: rgb(58, 54, 54);
+    border-radius: 12px;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    outline-offset: 4px;    
+  }
+.front2 {
+    display: none;
+    display: block;
+    padding: 12px 42px;
+    border-radius: 12px;
+    font-size: 1.25rem;
+    background-color: rgb(32, 32, 32);
+    color: white;
+    transform: translateY(-6px);
+  }
+
+.pushable2:active .front {
+    transform: translateY(-2px);
+  }

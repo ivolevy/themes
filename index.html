@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script>
+
+        function cambiar() {
+            document.getElementById('body').style.backgroundColor="black";
+            document.getElementById('pushable').style.display="none";   
+            document.getElementById('pushable2').style.display="flex";      
+        }
+        function reset(){
+            document.getElementById('body').style.backgroundColor="";
+            document.getElementById('pushable').style.display="flex";   
+            document.getElementById('pushable2').style.display="none"; 
+        }
+    </script>
+</head>
+<body id="body">
+
+      <div class="button">
+            <button onclick="cambiar();" class="pushable" id="pushable">
+                <span class="front">
+                  Dark mode
+                </span>
+              </button>
+              <button onclick="reset();" class="pushable2" id="pushable2">
+                <span class="front2">
+                  Ligth mode
+                </span>
+              </button>
+      </div>
+
+</body>
+</html>
